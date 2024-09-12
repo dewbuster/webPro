@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+<!-- emmet 설명 -->
+<!-- div#page>div.logo+ul#navigation>li*5>a -->
+<!-- emmet 구문은 css 선택자와 유사하다 -->
+<!-- div>div+p+span     + 형제레벨 -->
+<!-- div>p>span+em^^div   ^상위로 이동-->
+<div>
+	<p><span></span><em></em></p>
+</div>
+<div></div>
+
+<!-- div+div>p>span+em^^bq -->
+<!-- div+(div>p>span+em)+bq -->
+<div></div>
+<div>
+	<p><span></span><em></em></p>
+</div>
+<blockquote></blockquote>
+
+<!-- (ul>li*3)*2 -->
+<!-- ul*2>li*3 -->
+<ul>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+<ul>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+
+<div>
+	<header>
+		<ul>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+		</ul>
+	</header>
+	<footer>
+		<p></p>
+	</footer>
+</div>
+
+<div>
+	<dl>
+		<dt></dt>
+		<dd></dd>
+		<dt></dt>
+		<dd></dd>
+		<dt></dt>
+		<dd></dd>
+	</dl>
+</div>
+<footer>
+	<p></p>
+</footer>
+
+<!-- 속성 연산자 -->
+<!-- div#demo  #demo 로 div 생략가능-->
+<div id="demo"></div>
+<!-- div.demo .demo 로 div 생략가능-->
+<div class="demo"></div>
+<!-- [속성명] -->
+<!-- div[id] -->
+
+<!-- #header+.page+#footer.class1.class2.class3 -->
+<div id="header"></div>
+<div class="page"></div>
+<div id="footer" class="class1 class2 class3"></div>
+
+<!-- td[colspan=3][title="Hello World"] -->
+<!-- td[colspan=3 title="Hello World"] -->
+<td colspan="3" title="Hello World"></td>
+
+<!-- ul>li*5>{item$} -->
+<ul>
+	<li>item1</li>
+	<li>item2</li>
+	<li>item3</li>
+	<li>item4</li>
+	<li>item5</li>
+</ul>
+
+<!-- ul>li.item$$*5>{item$$$} -->
+<ul>
+	<li class="item01">item001</li>
+	<li class="item02">item002</li>
+	<li class="item03">item003</li>
+	<li class="item04">item004</li>
+	<li class="item05">item005</li>
+</ul>
+
+<!-- ul>li*5>{item$@-} -->
+<ul>
+	<li>item5</li>
+	<li>item4</li>
+	<li>item3</li>
+	<li>item2</li>
+	<li>item1</li>
+</ul>
+
+<!-- ul>li*5>{item$@12} -->
+<!-- {텍스트} -->
+<!-- a>{텍스트} -->
+<!-- p>{Click }+(a{here})+{ to continue} -->
+
+
+</body>
+</html>
