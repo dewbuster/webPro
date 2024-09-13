@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="window_init();">
+<!-- html 양식(Form) 
+    ㄴ 폼(양식)은 사용자 입력을 수집하는 데 사용되는 요소들
+    ㄴ 서버로 전송(서브밋 submit)
+    name 속성이 있어야 name속성값이 넘어감
+
+-->
+    <form action="ex05_ok.jsp" method="get">
+        <fieldset>
+            <legend>로그인</legend>
+            <label for="id">아이디</label>
+            <input type="text" id="id" name="id" autofocus="autofocus" tabindex="1"
+            placeholder="아이디 입력">
+            <br>
+            <label for="passwd">비밀번호</label>
+            <input type="password" id="passwd" name="passwd" tabindex="2" 
+            placeholder="8~15 대소특숫 비밀번호 입력">
+            <br>
+            <input type="submit" tabindex="3" value="로그인">
+            <!-- http:// ~ /ex05_ok.jsp?id=admin&passwd=1234 -->
+            <input type="reset" tabindex="4" value="초기화" onclick="funcReset();">
+            <button type="button">일반버튼</button>
+            <button type="submit">제출버튼</button>
+            <button type="reset">리셋버튼</button>
+            <br>
+        </fieldset>
+    </form>
+
+    <form action="">
+        <!-- 선택할 수 있는 옵션 목록 지정 -->
+         <input list="browser" required>
+         <datalist id="browser">
+            <option value="IE"></option>
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Opera"></option>
+         </datalist>
+         <br>
+         Email : <input type="email" placeholder="sample@sis.co.kr" required>
+         <br>
+         <p>좋아하는 동물?</p>
+         <input type="checkbox" name="animals" value="dog" id="dog" checked><label for="dog">강아지</label>
+         <input type="checkbox" name="animals" value="cat" id="cat" checked><label for="cat">고양이</label>
+         <input type="checkbox" name="animals" value="pig"><label>돼지</label>
+         <input type="checkbox" name="animals" value="lizard"><label>도마뱀</label>
+<!-- http://localhost/webPro/html/days05/ex05.html?animals=dog&animals=cat -->
+
+         <p>가장 좋아하는 색깔?</p>
+         <input type="radio" name="color" value="red" checked><label>빨강</label>
+         <input type="radio" name="color" value="green"><label>녹색</label>
+         <input type="radio" name="color" value="blue"><label>파랑</label>
+
+         <p>부서를 선택?</p>
+         <!-- 옵션중에 선택할때 일어나는 이벤트 : onchage -->
+         <select id="deptno" name="deptno" size="4">
+            <option value="10">ACCOUNTING</option>
+            <option value="20">RESEARCH</option>
+            <option value="30">SALES</option>
+            <option value="40">ACCOUNTING2</option>
+         </select>
+         <br>
+         <p>하고 싶은 말</p>
+         <textarea rows="10" cols="30"></textarea>
+         
+         <input type="submit">
+    </form>
+
+<script>
+    function funcReset(){
+        document.querySelector("#id").focus();
+    }
+    function window_init(){
+        // document.querySelector("#id").focus();
+        
+    }
+</script>
+</body>
+</html>
