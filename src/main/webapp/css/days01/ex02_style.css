@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+* { /* 범용 선택자 0점 */
+        
+}
+p#first{ /* 1점 + 100점 = 101점 */
+    color: green;
+}
+#first{ /* 100점 */
+    color: aqua;
+}
+p.last { /* 1점 + 10점 = 11점 */
+    background-color: green;
+}
+.last { /* 10점 */
+    background-color: yellow;
+}
+p { /* 1점 */
+    color: red;
+    text-align: center;
+}
+
+p{ /* 1점 */
+    color: blue;
+}
