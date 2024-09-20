@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google" content="notranslate">
+<style>
+    #panel, .flip{
+        background-color: #4acf50;
+        color: white;
+
+        text-align: center;
+        font-size: 16px;
+        padding: 10px;
+        margin: auto;
+        border: 1px solid #a6d8a8;
+    }
+    #panel{
+        display: none;
+    }
+    .flip:hover{
+        cursor: pointer;
+        color: red;
+    }
+</style>
+</head>
+<body>
+<p class="flip">Click to show panel</p>
+<div id="panel">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eius quidem necessitatibus. Eaque reprehenderit illum natus sed eligendi nulla, exercitationem incidunt maxime modi excepturi, laborum expedita molestiae facilis aperiam quibusdam.</p>
+    <p>Ipsa maiores blanditiis fuga veritatis autem. Ullam sequi labore quasi? Reprehenderit deleniti labore, dolor exercitationem veritatis voluptatum? Animi excepturi nesciunt asperiores aliquam id, tempora illo eius eligendi, sapiente, numquam voluptatem.</p>
+    <p>Neque obcaecati numquam minima facere iure in? Ipsam quas tempore iure officia voluptas fugit quam repudiandae autem sapiente nihil aliquam, provident perspiciatis, aspernatur harum nobis voluptate soluta corporis, minima exercitationem?</p>
+</div>
+XXX
+<script>
+    $("p.flip").on("click", function(){
+        $("div#panel").toggle();
+    })
+    // let sw = true;
+    // const flip = document.querySelector("p.flip");
+    // const panel = document.querySelector("div#panel");
+    // flip.addEventListener("click", function(){
+    //     panel.style.display = sw?"block":"none";
+    //     sw = !sw;
+    // })
+</script>
+</body>
+</html>
