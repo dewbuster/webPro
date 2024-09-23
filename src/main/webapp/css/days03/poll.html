@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>설문 작성</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://localhost/webPro/images/SiSt.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .item-container {
+            margin: 0;
+            text-align: left;
+        }
+        .item-label {
+            margin: 0;
+            display: inline-block;
+            width: 10px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        td {
+            border: 1px solid #afeefe;
+            padding: 8px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        td:first-child {
+            width: 100px;
+        }
+        label {
+            text-align: center;
+            display: block;
+        }
+        form {
+            display: inline-block;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color: rgb(43, 139, 199);" > ᯓ★설문 작성  ͙͘͡★</h2>
+    
+    <table>
+        <tr>
+            <td style="color: rgb(24, 197, 255); background-color: rgb(255, 237, 240);"><label for="question">질문</label></td>
+            <td><input type="text" id="question" name="question" autofocus="autofocus" placeholder="질문을 입력하세요."></td>
+        </tr>
+        <tr>
+            <td style="color: rgb(24, 197, 255); background-color: rgb(254, 212, 219);"><label for="start">시작일</label></td>
+            <td><input type="date" id="start" name="start" min="2024-01-01" max="2025-12-31"></td>
+        </tr>
+        <tr>
+            <td style="color: rgb(24, 197, 255); background-color: rgb(255, 237, 240);"><label for="end">종료일</label></td>
+            <td><input type="date" id="end" name="end" min="2024-01-01" max="2025-12-31"></td>
+        </tr>
+        <tr>
+            <td style="color: rgb(24, 197, 255); background-color: rgb(254, 212, 219);"><label for="num">항목수</label></td>
+            <td>
+                <select name="num" id="num" onchange="updatenum()">
+                    <option value="">선택</option>
+                    <option value="2">2개</option>
+                    <option value="3">3개</option>
+                    <option value="4">4개</option>
+                    <option value="5">5개</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td style="vertical-align: middle; color: rgb(24, 197, 255); background-color: rgb(255, 237, 240);"><label>항목</label></td>
+            <td>
+                <div id="numContainer"></div>
+            </td>
+        </tr>
+    </table>
+    <button type="button" onclick="reset()" style="float: right;">취소</button>
+    <button type="button" onclick="submit()" style="float: right;">확인</button>
+    <script>
+        function submit(){
+            alert("설문이 등록되었습니다.");
+        }
+        function reset(){
+            alert("목록으로 이동합니다.");
+        }
+
+        function updatenum() {
+            var num = parseInt(document.getElementById("num").value);
+            var con = document.getElementById("numContainer");
+            con.innerHTML = '';
+            
+            if (isNaN(num)) {
+                return;
+            }
+            
+            for (let i = 0; i < num; i++) {
+                var div = document.createElement("div");
+                div.className = "item-container";
+                
+                var label = document.createElement("label");
+                label.className = "item-label";
+                label.textContent = `${i+1}: `;
+                
+                var input = document.createElement("input");
+                input.type = 'text';
+                input.name = `question${i+1}`;
+                input.placeholder = '설문 항목을 입력하세요.';
+                
+                div.appendChild(label);
+                div.appendChild(input);
+                con.appendChild(div);
+            }
+        }
+    </script>
+</body>
+</html>

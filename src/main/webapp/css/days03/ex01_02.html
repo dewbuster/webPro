@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google" content="notranslate">
+<style>
+    .box{
+        border: 1px solid gray;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<!-- <div class="box">Box -1</div> -->
+
+<script>
+    // [js] var, let, const(객체저장)
+    // [js] div 요소 동적 생성 + 스타일 지정
+    // DOM method
+    const divElement  = document.createElement("div");  //<div></div>
+    divElement.innerText = "Box - 1";
+    // 스타일 지정
+    // divElement.style.border = "1px solid gray";
+    // divElement.style.width = "100px";
+    // divElement.style.height = "100px";
+    // divElement.style.textAlign = "center";
+    // 클래스 지정
+    divElement.className = "box";
+
+    // <body> 요소의 자식으로 생성한 div (마지막 요소로) 추가
+    document.body.appendChild(divElement);
+
+</script>
+</body>
+</html>
