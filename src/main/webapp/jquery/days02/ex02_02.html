@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google" content="notranslate">
+<link rel="stylesheet" href="http://localhost/webPro/resources/cdn-main/example.css">
+<script src="http://localhost/webPro/resources/cdn-main/example.js"></script>
+<style>
+ span.material-symbols-outlined{
+    vertical-align: text-bottom;
+ }  
+</style>
+</head>
+<body>
+<header>
+  <h1 class="main"><a href="#" style="position: absolute;top:30px;">ddd Home</a></h1>
+  <ul>
+    <li><a href="#">로그인</a></li>
+    <li><a href="#">회원가입</a></li>
+  </ul>
+</header>
+<div>
+  <xmp class="code">
+  
+  </xmp>
+
+</div>
+<script>
+/*
+let htmlString = 
+`
+  <button>Turn ON</button>
+  <button>Turn OFF</button>
+          :
+          :
+   $("body > div").append(htmlString);
+*/
+  const btnTurnOn = $("<button>Turn ON</button>");
+  $("body > div").append(btnTurnOn);
+  const btnTurnOff = $("<button></button>")
+  btnTurnOff.html("Turn Off")
+  $("body > div").append(btnTurnOff);
+  $("body > div").append("<br>");
+  const imgBulb = $("<img>");
+  // imgBulb.attr("src", "../images/pic_bulboff.gif");
+  // imgBulb.prop("alt", "bulboff");
+  imgBulb.attr({
+    "src":"../images/pic_bulboff.gif",
+    "alt":"bulboff"
+  });
+  $("body > div").append(imgBulb);
+  btnTurnOff.hide();
+
+  btnTurnOn.on("click", function(){
+    bulb_onoff(true);
+  });
+  btnTurnOff.on("click", function(){
+    bulb_onoff(false);
+  });
+
+  function bulb_onoff(flag){
+    btnTurnOn.toggle();
+    btnTurnOff.toggle();
+    imgBulb.attr("src", `../images/pic_bulb${flag?"on":"off"}.gif`);
+  }
+  
+</script>
+</body>
+</html>
