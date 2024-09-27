@@ -25,47 +25,34 @@
 </header>
 <div>
   <xmp class="code">
-  
+    
   </xmp>
 </div>
 <script>
-/*
-let htmlString = 
-`
-  <button>Turn ON</button>
-  <button>Turn OFF</button>
-          :
-          :
-   $("body > div").append(htmlString);
-*/
-  const btnTurnOn = $("<button>Turn ON</button>");
-  $("body > div").append(btnTurnOn);
-  const btnTurnOff = $("<button></button>")
-  btnTurnOff.html("Turn Off")
-  $("body > div").append(btnTurnOff);
-  $("body > div").append("<br>");
-  const imgBulb = $("<img>");
-  // imgBulb.attr("src", "../images/pic_bulboff.gif");
-  // imgBulb.prop("alt", "bulboff");
-  imgBulb.attr({
-    "src":"../images/pic_bulboff.gif",
-    "alt":"bulboff"
-  });
-  $("body > div").append(imgBulb);
-  btnTurnOff.hide();
+  // ?? 연산자 : x 변수값이 정의되지 않거나
+                //   또는
+                // null 인 경우
+                // 5 값이 할당
+  let x ;
+  x ??= 5;    //값이 없으니 5 할당
+  
+  let y = null;
+  y ??= 5;    //값이 null이라 5 할당
 
-  btnTurnOn.on("click", function(){
-    bulb_onoff(true);
-  });
-  btnTurnOff.on("click", function(){
-    bulb_onoff(false);
-  });
+  let z = 100;
+  z ??=5;     // 값이 이미 있어서 100 유지
 
-  function bulb_onoff(flag){
-    btnTurnOn.toggle();
-    btnTurnOff.toggle();
-    imgBulb.attr("src", `../images/pic_bulb${flag?"on":"off"}.gif`);
-  }
+</script>
+<script>
+  // let x = 12;
+  // let y = "24";
+  // alert(typeof y);
+  // 숫자형 문자열은 숫자와 비교 가능 - 숫자로 자동 형변환
+  // document.write(x < y);
+  // y = "hong";
+  //숫자형 문자열이 아닌 문자열 hong은
+  // 숫자와 비교할 때 NaN으로 변환 Not a Number
+  // document.write(x > y); -> document.write(x > NaN);
 </script>
 </body>
 </html>

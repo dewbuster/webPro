@@ -25,46 +25,23 @@
 </header>
 <div>
   <xmp class="code">
-  
+    엄격모드  "use strict"
+    ES5 새로 추가된 문법
+    변수를 선언하지 않고는 사용할 수 없다.
   </xmp>
 </div>
 <script>
-/*
-let htmlString = 
-`
-  <button>Turn ON</button>
-  <button>Turn OFF</button>
-          :
-          :
-   $("body > div").append(htmlString);
-*/
-  const btnTurnOn = $("<button>Turn ON</button>");
-  $("body > div").append(btnTurnOn);
-  const btnTurnOff = $("<button></button>")
-  btnTurnOff.html("Turn Off")
-  $("body > div").append(btnTurnOff);
-  $("body > div").append("<br>");
-  const imgBulb = $("<img>");
-  // imgBulb.attr("src", "../images/pic_bulboff.gif");
-  // imgBulb.prop("alt", "bulboff");
-  imgBulb.attr({
-    "src":"../images/pic_bulboff.gif",
-    "alt":"bulboff"
-  });
-  $("body > div").append(imgBulb);
-  btnTurnOff.hide();
+  "use strict"
+  name = "홍길동";
 
-  btnTurnOn.on("click", function(){
-    bulb_onoff(true);
-  });
-  btnTurnOff.on("click", function(){
-    bulb_onoff(false);
-  });
 
-  function bulb_onoff(flag){
-    btnTurnOn.toggle();
-    btnTurnOff.toggle();
-    imgBulb.attr("src", `../images/pic_bulb${flag?"on":"off"}.gif`);
+
+
+  document.write(Name);
+</script>
+<script>
+  function test(){
+    "use strict";
   }
 </script>
 </body>

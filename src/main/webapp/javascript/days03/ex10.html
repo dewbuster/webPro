@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google" content="notranslate">
+<link rel="stylesheet" href="http://localhost/webPro/resources/cdn-main/example.css">
+<script src="http://localhost/webPro/resources/cdn-main/example.js"></script>
+<style>
+ span.material-symbols-outlined{
+    vertical-align: text-bottom;
+ }  
+</style>
+</head>
+<body>
+<header>
+  <h1 class="main"><a href="#" style="position: absolute;top:30px;">ddd Home</a></h1>
+  <ul>
+    <li><a href="#">로그인</a></li>
+    <li><a href="#">회원가입</a></li>
+  </ul>
+</header>
+<div>
+  <xmp class="code">
+    나이를 저장하는 텍스트박스 선언
+    실행 버튼 선언
+    출력 p#demo 선언
+
+    30 이상 "old" 출력
+    30 미만 "young" 출력
+  </xmp>
+  <input type="text" id="age" name="age" onkeypress="return checkNumber(event)">
+  <br>
+  <button>실행</button>
+  <p id="demo"></p>
+</div>
+</body>
+<script>
+  function checkNumber(event){
+    if(event.key >= 0 && event.key <= 9) {
+    return true;
+  }
+  return false
+  }
+
+  document.querySelector("button").onclick = function(event){
+    let age = document.querySelector("#age").value;
+    if (!age.trim()){
+      alert("필수입력")
+      return;
+    }
+    if (age >= 30){
+      document.querySelector("#demo").innerHTML = "old";
+    } else{
+      document.querySelector("#demo").innerHTML = "young";
+    }
+  }
+</script>
+</html>

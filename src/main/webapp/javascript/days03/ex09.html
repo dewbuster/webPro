@@ -25,47 +25,30 @@
 </header>
 <div>
   <xmp class="code">
-  
+    [js 자료형(data type)]
+    1. undefined
+    2. number     정수/실수
+      js - (64비트 부동소수점)
+    3. boolean    true/false
+    4. string
+    5. null
+    6. BigInt   ES2020 추가
+        너무 큰 정수값을 저장할 자료형
+        (64비트 부동 소수점 형식으로 저장)
+        let x = BigInt("12333333331244444444444444444444444432423214332143124123123323");
+    7. object ({} js객체, [] js배열)
+
+    변수 선언
+    자료형 변수명 String name;
+    var, let, const 변수명;
   </xmp>
 </div>
 <script>
-/*
-let htmlString = 
-`
-  <button>Turn ON</button>
-  <button>Turn OFF</button>
-          :
-          :
-   $("body > div").append(htmlString);
-*/
-  const btnTurnOn = $("<button>Turn ON</button>");
-  $("body > div").append(btnTurnOn);
-  const btnTurnOff = $("<button></button>")
-  btnTurnOff.html("Turn Off")
-  $("body > div").append(btnTurnOff);
-  $("body > div").append("<br>");
-  const imgBulb = $("<img>");
-  // imgBulb.attr("src", "../images/pic_bulboff.gif");
-  // imgBulb.prop("alt", "bulboff");
-  imgBulb.attr({
-    "src":"../images/pic_bulboff.gif",
-    "alt":"bulboff"
-  });
-  $("body > div").append(imgBulb);
-  btnTurnOff.hide();
-
-  btnTurnOn.on("click", function(){
-    bulb_onoff(true);
-  });
-  btnTurnOff.on("click", function(){
-    bulb_onoff(false);
-  });
-
-  function bulb_onoff(flag){
-    btnTurnOn.toggle();
-    btnTurnOff.toggle();
-    imgBulb.attr("src", `../images/pic_bulb${flag?"on":"off"}.gif`);
-  }
+  // let age = 3.14;
+  // alert(typeof age);
+  let gender = true;
+  alert(typeof null);
+  
 </script>
 </body>
 </html>

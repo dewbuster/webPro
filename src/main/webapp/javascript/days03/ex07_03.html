@@ -25,47 +25,28 @@
 </header>
 <div>
   <xmp class="code">
-  
+     
   </xmp>
 </div>
 <script>
-/*
-let htmlString = 
-`
-  <button>Turn ON</button>
-  <button>Turn OFF</button>
-          :
-          :
-   $("body > div").append(htmlString);
-*/
-  const btnTurnOn = $("<button>Turn ON</button>");
-  $("body > div").append(btnTurnOn);
-  const btnTurnOff = $("<button></button>")
-  btnTurnOff.html("Turn Off")
-  $("body > div").append(btnTurnOff);
-  $("body > div").append("<br>");
-  const imgBulb = $("<img>");
-  // imgBulb.attr("src", "../images/pic_bulboff.gif");
-  // imgBulb.prop("alt", "bulboff");
-  imgBulb.attr({
-    "src":"../images/pic_bulboff.gif",
-    "alt":"bulboff"
-  });
-  $("body > div").append(imgBulb);
-  btnTurnOff.hide();
-
-  btnTurnOn.on("click", function(){
-    bulb_onoff(true);
-  });
-  btnTurnOff.on("click", function(){
-    bulb_onoff(false);
-  });
-
-  function bulb_onoff(flag){
-    btnTurnOn.toggle();
-    btnTurnOff.toggle();
-    imgBulb.attr("src", `../images/pic_bulb${flag?"on":"off"}.gif`);
+  /*
+  var x = 10;
+  document.write(`1. x=${x}<br>`);
+  {
+    var x = 20;
+    document.write(`2. x=${x}<br>`);
   }
+  document.write(`3. x=${x}<br>`);
+  */
+</script>
+<script>
+  let x = 10;
+  document.write(`1. x=${x}<br>`);
+  {
+    let x = 20;
+    document.write(`2. x=${x}<br>`);
+  }
+  document.write(`3. x=${x}<br>`);
 </script>
 </body>
 </html>

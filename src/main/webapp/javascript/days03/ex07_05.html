@@ -25,47 +25,33 @@
 </header>
 <div>
   <xmp class="code">
-  
+     
   </xmp>
 </div>
 <script>
-/*
-let htmlString = 
-`
-  <button>Turn ON</button>
-  <button>Turn OFF</button>
-          :
-          :
-   $("body > div").append(htmlString);
-*/
-  const btnTurnOn = $("<button>Turn ON</button>");
-  $("body > div").append(btnTurnOn);
-  const btnTurnOff = $("<button></button>")
-  btnTurnOff.html("Turn Off")
-  $("body > div").append(btnTurnOff);
-  $("body > div").append("<br>");
-  const imgBulb = $("<img>");
-  // imgBulb.attr("src", "../images/pic_bulboff.gif");
-  // imgBulb.prop("alt", "bulboff");
-  imgBulb.attr({
-    "src":"../images/pic_bulboff.gif",
-    "alt":"bulboff"
-  });
-  $("body > div").append(imgBulb);
-  btnTurnOff.hide();
+  //const 상수는 선언할 때 초기화 해야된다.
+  // const PI;
+  // PI = 3.14;
 
-  btnTurnOn.on("click", function(){
-    bulb_onoff(true);
-  });
-  btnTurnOff.on("click", function(){
-    bulb_onoff(false);
-  });
+  // const js배열, 객체 사용
 
-  function bulb_onoff(flag){
-    btnTurnOn.toggle();
-    btnTurnOff.toggle();
-    imgBulb.attr("src", `../images/pic_bulb${flag?"on":"off"}.gif`);
-  }
+  // js 배열 선언    []
+  // const m = [];
+  // m[0] = 1;
+  // m[1] = 1;
+  // m[2] = 1;
+  // const m = [1,2,3];
+  // m[3] = 5;
+  // m[0] = 100;
+  // document.write(m[0]);
+  const person = { name:"홍길동", age:20};  // <- 객체
+  document.write(person.name + "<br>");
+  person.age = 30;
+  document.write(person.age + "<br>");
+  document.write(person["age"] + "<br>");
+
+  // const 상수라 내부 값은 변경 가능하지만 새로 참조는 X
+  // person = {name:"이시훈", age:30}; X
 </script>
 </body>
 </html>

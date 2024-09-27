@@ -25,47 +25,22 @@
 </header>
 <div>
   <xmp class="code">
-  
+    [js 출력(표시) 방법]
+    1. innerText, innerHTML 속성
+    2. BOM - window.alert(); 경고창
+    3. console.log()
+    4. document.write() - body에 출력
   </xmp>
+  <p id="demo"></p>
+  <button onclick="window.print()">인쇄하기</button>
 </div>
 <script>
-/*
-let htmlString = 
-`
-  <button>Turn ON</button>
-  <button>Turn OFF</button>
-          :
-          :
-   $("body > div").append(htmlString);
-*/
-  const btnTurnOn = $("<button>Turn ON</button>");
-  $("body > div").append(btnTurnOn);
-  const btnTurnOff = $("<button></button>")
-  btnTurnOff.html("Turn Off")
-  $("body > div").append(btnTurnOff);
-  $("body > div").append("<br>");
-  const imgBulb = $("<img>");
-  // imgBulb.attr("src", "../images/pic_bulboff.gif");
-  // imgBulb.prop("alt", "bulboff");
-  imgBulb.attr({
-    "src":"../images/pic_bulboff.gif",
-    "alt":"bulboff"
-  });
-  $("body > div").append(imgBulb);
-  btnTurnOff.hide();
+  document.write("홍길동");
+  document.write("<br>");
+  document.write("이시훈<br>");
+  document.write("김준석");
 
-  btnTurnOn.on("click", function(){
-    bulb_onoff(true);
-  });
-  btnTurnOff.on("click", function(){
-    bulb_onoff(false);
-  });
-
-  function bulb_onoff(flag){
-    btnTurnOn.toggle();
-    btnTurnOff.toggle();
-    imgBulb.attr("src", `../images/pic_bulb${flag?"on":"off"}.gif`);
-  }
+  document.querySelector("#demo").innerHTML = "홍길동";
 </script>
 </body>
 </html>
