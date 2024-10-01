@@ -30,7 +30,7 @@
   <div style="display: flex;justify-content: space-around;align-items: baseline;">
     <input type="text" autofocus="autofocus">
     <select name="operator" id="operator">
-      <option>선택.</option>
+      <option>선택</option>
       <option>+</option>
       <option>-</option>
       <option>*</option>
@@ -47,9 +47,10 @@
   let txt1 = document.querySelector("input[type=text]:first-of-type");
   let txt2 = document.querySelector("input[type=text]:nth-of-type(2)");
   let txt3 = document.querySelector("input[type=text]:last-of-type");
+  let opCmb = document.querySelector("#operator");
 
   txt1.onkeydown = function (){
-    if(  ! (event.keyCode >= 48 && event.keyCode <=57 
+    if(  ! (event.key >= 0 && event.key <= 9 
           || event.keyCode == 8
           || event.keyCode == 13
           || event.keyCode == 229 ) ){
@@ -62,7 +63,7 @@
   }
 
   txt2.onkeydown = function (){
-    if(  ! (event.keyCode >= 48 && event.keyCode <=57 
+    if(  ! (event.key >= 0 && event.key <= 9 
           || event.keyCode == 8
           || event.keyCode == 13
           || event.keyCode == 229 ) ){
@@ -71,14 +72,42 @@
     }
     
     if( event.keyCode == 13 ) {
+      /*
         let result = parseInt( txt1.value ) + Number( txt2.value );
         txt3.value = result;
         
         txt1.select();
+        */
+       this.previousElementSibling.focus();
     }
         
   }
-
+opCmb.onchange = function(){
+  let result;
+  switch (this.value) {
+    case "+":
+      result = parseInt( txt1.value ) + Number( txt2.value );
+      break;
+    case "-":
+    result = parseInt( txt1.value ) - Number( txt2.value );
+      break;
+    case "*":
+    result = parseInt( txt1.value ) * Number( txt2.value );
+      break;
+    case "/":
+    result = parseInt( txt1.value ) / Number( txt2.value );
+      break;
+    case "%":
+    result = parseInt( txt1.value ) % Number( txt2.value );
+      break;
+    case "**":
+    result = parseInt( txt1.value ) ** Number( txt2.value );
+      break; 
+    default:
+      break;
+  }
+  txt3.value = result;
+}
 </script>
 </body>
 </html>
