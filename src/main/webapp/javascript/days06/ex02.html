@@ -12,7 +12,7 @@
 <style>
  span.material-symbols-outlined{
     vertical-align: text-bottom;
- }
+ }  
 </style>
 </head>
 <body>
@@ -25,19 +25,37 @@
 </header>
 <div>
   <xmp class="code">
-    [js 배열]
-    1. 정의 ? 둘 이상의 값을 보유할 수 있는 특수한 변수
-    2. 목적
-    3. 형식
-        const m = [];
-        const m = new Array();
-
-        const m = [1,2,3];
-        const m = new Array(1,2,3);
+    Set 컬렉션 클래스 : 중복 허용 X
+    new Set()  / add()
   </xmp>
 </div>
 <script>
+  const s = new Set(["a","b","c"]);
+  // 1. add()
+  s.add("d");
+  s.add("e");
+  // 2. has()
+  // alert( s.has("x") ); // false;
+  // alert( s.has("c") ); // true;
+  // 3. for of 문
+  // 4. forEach 문
+  // 5. values()    Set의 iterator 반복자를 반환
   
+</script>
+<script>
+  /*
+  const s = new Set();
+  s.add("a");
+  s.add("b");
+  s.add("c");
+  s.add("c");
+  s.add("c");
+
+  // alert(s.size);
+  for (let x of s) {
+    console.log(x);
+  }
+  */
 </script>
 </body>
 </html>

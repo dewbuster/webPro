@@ -12,7 +12,7 @@
 <style>
  span.material-symbols-outlined{
     vertical-align: text-bottom;
- }
+ }  
 </style>
 </head>
 <body>
@@ -25,19 +25,29 @@
 </header>
 <div>
   <xmp class="code">
-    [js 배열]
-    1. 정의 ? 둘 이상의 값을 보유할 수 있는 특수한 변수
-    2. 목적
-    3. 형식
-        const m = [];
-        const m = new Array();
-
-        const m = [1,2,3];
-        const m = new Array(1,2,3);
+    [배열 검색 메서드]
+    Array indexOf()
+    Array lastIndexOf()
+    Array includes()
+    Array find()
+    Array findIndex()
+    Array findLast()      뒤에서부터 찾기
+    Array findLastIndex() 뒤에서부터 찾기
   </xmp>
-</div>
 <script>
-  
+  const m = [27, 28, 30, 40, 42, 35, 30];
+  // m 배열에서 32보다 큰 요소의 위치값과 정수
+  let index, n;
+  n = m.find((element)=>element > 29);
+  index = m.findIndex((element)=>element > 29);
+  console.log(n, index);
+
+  // let index = m.indexOf(30);       // 2
+  // let index = m.lastIndexOf(30);   // 6
+  // let index = m.lastIndexOf(30);   // -1
+  // let index = m.includes(300);
+  // alert(index);
 </script>
+</div>
 </body>
 </html>

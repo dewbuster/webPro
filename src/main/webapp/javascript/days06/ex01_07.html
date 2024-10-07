@@ -12,7 +12,7 @@
 <style>
  span.material-symbols-outlined{
     vertical-align: text-bottom;
- }
+ }  
 </style>
 </head>
 <body>
@@ -25,19 +25,21 @@
 </header>
 <div>
   <xmp class="code">
-    [js 배열]
-    1. 정의 ? 둘 이상의 값을 보유할 수 있는 특수한 변수
-    2. 목적
-    3. 형식
-        const m = [];
-        const m = new Array();
-
-        const m = [1,2,3];
-        const m = new Array(1,2,3);
+    sort()      //오름차순
+    reverse()   //내림차순
+    toSorted()  // 원본은 그대로 두고 오름차순 정렬된 배열을 반환
+    toReversed()
   </xmp>
 </div>
 <script>
-  
+  const m = ["sbs", "jtbc", "mbc", "kbs"];
+  document.write( m.toString() + "<br>");
+  // m.sort();
+  // m.reverse();
+  const n = m.toSorted();
+  document.write( m.toString() + "<br>");
+  document.write( n.toString() + "<br>");
+
 </script>
 </body>
 </html>

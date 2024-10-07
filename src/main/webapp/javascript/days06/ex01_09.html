@@ -12,7 +12,7 @@
 <style>
  span.material-symbols-outlined{
     vertical-align: text-bottom;
- }
+ }  
 </style>
 </head>
 <body>
@@ -25,19 +25,31 @@
 </header>
 <div>
   <xmp class="code">
-    [js 배열]
-    1. 정의 ? 둘 이상의 값을 보유할 수 있는 특수한 변수
-    2. 목적
-    3. 형식
-        const m = [];
-        const m = new Array();
-
-        const m = [1,2,3];
-        const m = new Array(1,2,3);
+    버튼을 클릭하면 로또번호
+    오름차순정렬해서
+    demo li태그 형식으로 출력..
+    조건 중복 체크~
   </xmp>
+  <button>로또 번호 발생기</button>
+  <p id="demo"></p>
 </div>
 <script>
-  
+  const demo = document.querySelector("#demo");
+  document.querySelector("button").addEventListener("click", function(){
+    demo.innerHTML = "";
+    let list = [];
+    let n;
+    while(list.length < 6 ){
+      n = Math.floor(Math.random() * 46 + 1);
+      if (!list.includes(n)){
+        list.push(n);
+      }
+    }
+
+    list.sort((a,b)=>a-b).forEach(e=>{
+      demo.innerHTML += `<li>${e}</li>` 
+    });
+  })
 </script>
 </body>
 </html>

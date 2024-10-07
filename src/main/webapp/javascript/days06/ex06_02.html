@@ -12,7 +12,7 @@
 <style>
  span.material-symbols-outlined{
     vertical-align: text-bottom;
- }
+ }  
 </style>
 </head>
 <body>
@@ -25,18 +25,48 @@
 </header>
 <div>
   <xmp class="code">
-    [js 배열]
-    1. 정의 ? 둘 이상의 값을 보유할 수 있는 특수한 변수
-    2. 목적
-    3. 형식
-        const m = [];
-        const m = new Array();
-
-        const m = [1,2,3];
-        const m = new Array(1,2,3);
+    
   </xmp>
 </div>
 <script>
+  // [문제] 이번달의 마지막 날짜?
+  /*
+  const d = new Date();
+  let year = d.getFullYear();
+  let month = d.getMonth()+1;   
+  
+  const d2 = new Date(year,month,0);
+  alert(d2.getDate());  // 31
+  
+  document.write(d2.toLocaleString());
+  */
+ // [문제] const rrn = "870412-1700001";
+ // 생일 O / X / 오늘
+ const rrn = "870412-1700001";
+ /*
+ const birth = rrn.substring(2,6);
+ const d = new Date();
+ const today = (d.getMonth()+1).toString() + d.getDate().toString().padStart(2,'0');
+ if (birth - today < 0){
+  alert("s");
+ };
+*/
+const t = new Date();
+let tYear = t.getFullYear();
+t.setHours(0);
+t.setMinutes(0);
+t.setSeconds(0);
+t.setMilliseconds(0);
+
+let month = rrn.substr(2,2);
+let date = rrn.substr(4,2);
+const b = new Date(tYear,month-1,date);
+document.write(b.toLocaleString() + "<br>");
+document.write(t.toLocaleString() + "<br>");
+
+// if (t.getTime() - b.getTime() < 0 )
+
+ 
   
 </script>
 </body>

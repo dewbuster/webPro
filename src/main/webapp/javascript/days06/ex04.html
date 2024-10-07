@@ -12,7 +12,7 @@
 <style>
  span.material-symbols-outlined{
     vertical-align: text-bottom;
- }
+ }  
 </style>
 </head>
 <body>
@@ -25,19 +25,49 @@
 </header>
 <div>
   <xmp class="code">
-    [js 배열]
-    1. 정의 ? 둘 이상의 값을 보유할 수 있는 특수한 변수
-    2. 목적
-    3. 형식
-        const m = [];
-        const m = new Array();
-
-        const m = [1,2,3];
-        const m = new Array(1,2,3);
+    [ for ~ of 문 ]
+      ㄴ array, set, map, string 반복 가능한 객체
+        들을 반복적으로 처리하는 반복문
+      ㄴ 선언 형식 
+      for (let/const 변수명 of 반복객체){
+      }
   </xmp>
 </div>
 <script>
-  
+  /*
+  const arr = ["a","b","c"];
+  for (let element of arr){
+    console.log(element);
+  }
+  */
+</script>
+<script>
+  /*
+  let msg = "hello world!!!";
+  for (let c of msg){
+    console.log(c);
+  }
+  */
+</script>
+<script>
+  /*
+  let m = new Map([
+    [1, "a"],
+    [2, "b"],
+    [3, "c"]
+  ]);
+  for (let entry of m){
+    console.log(entry);
+    // console.log(entry[0]); == key
+    // console.log(entry[1]); == value
+  }
+  */
+</script>
+<script>
+  let s = new Set([1,1,2,2,2,3,3]);
+  for (let v of s){
+    console.log(v);
+  }
 </script>
 </body>
 </html>

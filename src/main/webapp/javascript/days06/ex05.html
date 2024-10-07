@@ -12,7 +12,7 @@
 <style>
  span.material-symbols-outlined{
     vertical-align: text-bottom;
- }
+ }  
 </style>
 </head>
 <body>
@@ -25,19 +25,21 @@
 </header>
 <div>
   <xmp class="code">
-    [js 배열]
-    1. 정의 ? 둘 이상의 값을 보유할 수 있는 특수한 변수
-    2. 목적
-    3. 형식
-        const m = [];
-        const m = new Array();
-
-        const m = [1,2,3];
-        const m = new Array(1,2,3);
+    [js 컬렉션]
+    1. forms 컬렉션
+    2. options 컬렉션
+    3. arguments 컬렉션
   </xmp>
 </div>
 <script>
-  
+  function test(){
+    for (let arg of arguments){
+      console.log(arg);
+    }
+    console.log("-------");
+  }
+  test("홍길동", 20);
+  test("홍길동", 20, "남자");
 </script>
 </body>
 </html>

@@ -12,7 +12,7 @@
 <style>
  span.material-symbols-outlined{
     vertical-align: text-bottom;
- }
+ }  
 </style>
 </head>
 <body>
@@ -25,19 +25,17 @@
 </header>
 <div>
   <xmp class="code">
-    [js 배열]
-    1. 정의 ? 둘 이상의 값을 보유할 수 있는 특수한 변수
-    2. 목적
-    3. 형식
-        const m = [];
-        const m = new Array();
-
-        const m = [1,2,3];
-        const m = new Array(1,2,3);
+    
   </xmp>
 </div>
 <script>
-  
+  const m = [1,2,3];
+  m[2] = 100;
+  m[5] = 200;
+  // alert(m.toString());
+  // js에서 배열은 다양한 타입의 값을 가질 수 있다.
+  const person = ["lee", new Date(), 20];
+  alert(person[1]);
 </script>
 </body>
 </html>
