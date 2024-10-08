@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google" content="notranslate">
+<link rel="stylesheet" href="http://localhost/webPro/resources/cdn-main/example.css">
+<script src="http://localhost/webPro/resources/cdn-main/example.js"></script>
+<style>
+ span.material-symbols-outlined{
+    vertical-align: text-bottom;
+ }  
+</style>
+</head>
+<body>
+<header>
+  <h1 class="main"><a href="#" style="position: absolute;top:30px;">ddd Home</a></h1>
+  <ul>
+    <li><a href="#">로그인</a></li>
+    <li><a href="#">회원가입</a></li>
+  </ul>
+</header>
+<div>
+  <xmp class="code">
+    [ ja 구조 분해 구문 ]
+  </xmp>
+</div>
+<script>
+  const person = {
+      name: "admin",
+      age: 20,
+      gender: true
+  };
+  /*
+  let pName = person.name;
+  let pAge = person["age"];
+  console.log( pName + "/" + pAge);
+  */
+  /*
+  let {name, age} = person;
+  console.log(name + "/" + age);
+  */
+ let {name:n} = person;
+//  alert(n);
+</script>
+<script>
+  // 문자 분해 (destructuring)
+  let msg = "hello world!!!";
+  // let [a,b,c,d,e] = msg;
+  // alert(e);
+</script>
+<script>
+  // 배열 분해
+  const m = [3,5,2,4,1];
+  // let [a,b,c,d,e] = m;
+  // let [a,,,,e] = m;
+  // let {[2]:x, [3]:y} = m;
+  // let [x,y, ...rest] = m;
+  // alert(x + "/" + y + "/" + rest);
+</script>
+<script>
+  let x = 10;
+  let y = 20;
+  // js 두 기억공간의 값 스왑하기
+  [x,y] = [y,x];
+  alert(x + "/" + y);
+</script>
+</body>
+</html>

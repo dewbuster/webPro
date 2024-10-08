@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google" content="notranslate">
+<link rel="stylesheet" href="http://localhost/webPro/resources/cdn-main/example.css">
+<script src="http://localhost/webPro/resources/cdn-main/example.js"></script>
+<style>
+ span.material-symbols-outlined{
+    vertical-align: text-bottom;
+ }  
+ select {
+   width: 100px;
+   text-align: center;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+ul {
+   list-style-type: none;
+}
+
+body {
+   font-family: Verdana, sans-serif;
+}
+
+.month {
+   padding: 70px 25px;
+   width: 100%;
+   background: #1abc9c;
+   text-align: center;
+}
+
+.month ul {
+   margin: 0;
+   padding: 0;
+}
+
+.month ul li {
+   color: white;
+   font-size: 20px;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+}
+
+.month .prev {
+   float: left;
+   padding-top: 10px;
+}
+
+.month .next {
+   float: right;
+   padding-top: 10px;
+}
+
+.weekdays {
+   margin: 0;
+   padding: 10px 0;
+   background-color: #ddd;
+}
+
+.weekdays li {
+   display: inline-block;
+   width: 13.6%;
+   color: #666;
+   text-align: center;
+}
+
+.days {
+   padding: 10px 0;
+   background: #eee;
+   margin: 0;
+}
+
+.days li {
+   list-style-type: none;
+   display: inline-block;
+   width: 13.6%;
+   text-align: center;
+   margin-bottom: 5px;
+   font-size: 12px;
+   color: #777;
+}
+
+.days li .active {
+   padding: 5px;
+   background: #1abc9c;
+   color: white !important
+}
+</style>
+<style>
+  li.prevMonth{
+    color: blue;
+  }
+  li.nextMonth{
+    color: red;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1 class="main"><a href="#" style="position: absolute;top:30px;">ddd Home</a></h1>
+  <ul>
+    <li><a href="#">로그인</a></li>
+    <li><a href="#">회원가입</a></li>
+  </ul>
+</header>
+<div>
+  <xmp class="code">
+    
+  </xmp>
+  <h3>달력(일정관리)</h3>
+  <select id="cmbyear" onchange="changeDate()"></select>
+  <select id="cmbmonth" onchange="changeDate()"></select>
+  <select id="cmbdate"></select>
+  <br>
+  <br>
+  
+  <div class="month">
+      <ul>
+         <li class="prev" onclick="changeCalendar(-1)">&#10094;</li>
+         <li class="next" onclick="changeCalendar(1)">&#10095;</li>
+         <li>
+              <span id="month">August</span><br> 
+              <span id="year" style="font-size: 18px">2017</span>
+         </li>
+      </ul>
+  </div>
+  <ul class="weekdays">
+      <li>Su</li>
+      <li>Mo</li>
+      <li>Tu</li>
+      <li>We</li>
+      <li>Th</li>
+      <li>Fr</li>
+      <li>Sa</li>
+  </ul>
+  <ul class="days">  
+     <li></li>
+     <li></li>
+     <li>1</li>
+     <li>4</li>
+     <li>5</li>
+     <li>6</li>
+     <li>7</li>
+     <li>8</li>
+     <li>9</li>
+     <li><span class="active">10</span></li>
+     <li>11</li>
+     <li>12</li>
+     <li>13</li>
+     <li>14</li>
+     <li>15</li>
+     <li>16</li>
+     <li>17</li>
+     <li>18</li>
+     <li>19</li>
+     <li>20</li>
+     <li>21</li>
+     <li>22</li>
+     <li>23</li>
+     <li>24</li>
+     <li>25</li>
+     <li>26</li>
+     <li>27</li>
+     <li>28</li>
+     <li>29</li>
+     <li>30</li>
+     <li>31</li>  
+  </ul> 
+  
+</div>
+</div>
+<script>
+  const cmbYear = document.getElementById("cmbyear");
+  const cmbMonth = document.getElementById("cmbmonth");
+  const cmbDate = document.getElementById("cmbdate");
+  const ulDays = document.querySelector("ul.days");
+  const today = new Date();
+  let tYear = today.getFullYear();
+  let tMonth = today.getMonth()+1;
+  let tDate = today.getDate();
+  let year = tYear;
+  let month = tMonth;
+  let lastDate = getLastDate(tYear, tMonth);
+
+  for (let i = 1970; i <= 2050; i++) {
+    const opt = document.createElement("option");
+    opt.innerHTML = i;
+    cmbYear.appendChild(opt);
+  }
+  cmbYear.value = tYear;
+
+  for (let i = 1; i <= 12; i++) {
+    const opt = document.createElement("option");
+    opt.innerHTML = i;
+    cmbMonth.appendChild(opt);
+  }
+  cmbMonth.value = tMonth;
+
+  for (let i = 1; i <= lastDate; i++) {
+    const opt = document.createElement("option");
+    opt.innerHTML = i;
+    cmbDate.appendChild(opt);
+  }
+  cmbDate.value = tDate;
+  // cmbDate.innerHTML = "";
+  function getLastDate(year, month){
+    const d = new Date(year,month,0);
+    return d.getDate();
+  }
+  
+  function getDayOfWeek(year, month, date){
+    const d = new Date(year, month-1, date);
+    return d.getDay();
+  }
+
+  function printCalendar(year, month){
+    document.getElementById("month").innerText = month;
+    document.getElementById("year").innerText = year;
+    ulDays.innerHTML = "";
+    let dayOfWeek = getDayOfWeek(year, month, 1);
+    let lastDate = getLastDate(year, month);
+    let startDay = new Date(year, month-1, 1-dayOfWeek);
+    let date;
+    for (let i = 0; i < 42; i++) {
+      date = startDay.getDate();
+      let li = document.createElement("li");
+      li.innerHTML = date;
+      if (startDay.getMonth()+1 < month){
+        li.classList.add("prevMonth");
+      } else if (startDay.getMonth()+1 > month){
+        li.classList.add("nextMonth");
+      } else if (today.toLocaleDateString() == startDay.toLocaleDateString()){
+        li.innerHTML = "";
+        let span = document.createElement("span");
+        span.innerHTML = date;
+        span.classList.add("active");
+        li.appendChild(span);
+      } 
+      ulDays.appendChild(li);
+      startDay.setDate(startDay.getDate()+1);
+    }
+  }
+  printCalendar(year, month);
+</script>
+<script>
+  // >> (1)
+  // << (-1)
+  function changeCalendar(value){
+    month =  parseInt(month)
+    month += value;
+    if (month == 13){
+      month = 1;
+      year++;
+    } else if (month == 0){
+      month = 12;
+      year--;
+    }
+    cmbYear.value = year;
+    cmbMonth.value = month;
+    changeDate();
+  }
+
+  function changeDate(){
+    year = parseInt(cmbYear.value);
+    month = parseInt(cmbMonth.value);
+    printCalendar(year, month);
+    let lastDate = getLastDate(year, month);
+    cmbDate.innerHTML = "";
+    for (let i = 1; i <= lastDate; i++) {
+    const opt = document.createElement("option");
+    opt.innerHTML = i;
+    cmbDate.appendChild(opt);
+    }
+  }
+</script>
+</body>
+</html>
