@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ohora main_clone</title>
+  <link rel="shortcut icon" type="image/x-icon" href="http://localhost/webPro/images/SiSt.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="http://localhost/webPro/src/main/webapp/ohora/ohora_css_01.css">
+  <style>
+  </style>
+</head>
+<body id="SmartPC">
+  <div class="Top_Banner">
+    <a href=""></a>
+  </div>
+  <div id="SMS_fixed_wrap" class="SMS_fixed_wrap">
+    <div class="SP_top_wrap">
+      <div class="join_bar">
+        <div class="join">
+          <a href="회원가입 링크">
+            <span class="title">회원가입</span>
+          </a>
+          <a href="로그인 링크">
+            <span class="title">로그인</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main_menu">
+      <div class="logo_layout">
+        <a href="">
+          <img src="/web/upload/logo/ohora_BI_logotype_w.png">
+        </a>
+      </div>
+
+      <!-- 헤더 주메뉴 start -->
+      <div class="menu_container">
+        <ul>
+          <li>
+            <a href="">new</a>
+          </li>
+          <li>
+            <a href="">best</a>
+          </li>
+          <li>
+            <a href="">product</a>
+            <ul>
+              <li>
+                <a href="">
+                  <span>네일</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>페디</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>커스텀</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>케어 & 툴</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="">outlet</a>
+          </li>
+          <li>
+            <a href="">event</a>
+          </li>
+          <li>
+            <a href="">how to</a>
+          </li>
+        </ul>
+      </div>
+      <!-- 헤더 주메뉴 end -->
+
+      <!-- 헤더 아이콘 start -->
+      <div class="icon_wrap">
+        <div class="small_icon_search_btn"></div>
+        <div class="small_cart_icon">
+          <a href="장바구니링크">
+            <b class="cart_count">0</b>
+          </a>
+        </div>
+        <div class="small_icon_menu">
+          <a class="SMS_menu"></a>
+        </div>
+      </div>
+    </div>
+    <!-- 헤더 아이콘 end -->
+
+    <!-- 돋보기 클릭하면 나오는 검색창 start -->
+    <div class="hd_search_container" style="overflow: hidden; display: block;">
+      <div class="SP_search_wrap">
+        <div class="SP_utilListSearch_inner">
+          <form action="" id="searchBarForm" method="get" target="_self" enctype="multipart/form-data">
+            <input id="banner_action" name="banner_action" type="hidden">
+            <div class="searchheader">
+              <fieldset>
+                <legend style="display: none;">검색</legend>
+                <input type="text" id="keyword" name="keyword" placeholder="검색어를 입력해주세요" autocomplete="off">
+                <button class="search_submit_btn" type="button">
+                  <span class="SP_cm_search_icon"></span>
+                </button>
+              </fieldset>
+            </div>
+          </form>
+        </div>
+        <!-- 돋보기 클릭하면 나오는 검색창 end -->
+
+        <!-- 검색 키워드 start -->
+        <div class="SP_utilListKeyword_inner">
+          <ul>
+            <li>
+              <a href="">#OUTLET 입장하기</a>
+            </li>
+            <li>
+              <a href="">#BEST 디자인 추천</a>
+            </li>
+            <li>
+              <a href="">#첫구매 젤램프 증정</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 검색 키워드 end -->
+
+      </div>
+    </div>
+
+    <!-- 검색 레이아웃 -->
+    <!-- 햄버거 메뉴(hover 메뉴~) start -->
+    <div class="hd_cate_container">
+      <div class="SP_category_wrap">
+        <div class="inner">
+          <!-- 첫번째 줄 메뉴 -->
+          <div class="cate_wrap_first"></div>
+          <div class="big_txt">
+            <a href="" class="eng_font_big">
+              <span>new</span>
+            </a>
+            <a href="" class="">
+              <span></span>
+            </a>
+            <a href="" class="">
+              <span></span>
+            </a>
+          </div>
+          <div class="big_txt">
+            <a href="">
+              <span>best</span>
+            </a>
+            <a href="">
+              <span>네일</span>
+            </a>
+            <a href="">
+              <span>패디</span>
+            </a>
+          </div>
+        </div>
+        <div class="cate_wrap_first">
+          <div class="big_txt">
+            <a class="eng_font_big" href="">
+              <span>nail</span>
+            </a>
+            <a href="">
+              <span>젤스트립</span>
+            </a>
+            <a href="">
+              <span>젤네일팁</span>
+            </a>
+          </div>
+          <div class="big_txt">
+            <a class="eng_font_big" href="">
+              <span>pedi</span>
+            </a>
+            <a href="">
+              <span>젤스트립</span>
+            </a>
+          </div>
+        </div>
+        <div class="cate_wrap_first">
+          <div class="big_txt">
+            <a href="" class="eng_font_big">
+              <span>outlet</span>
+            </a>
+          </div>
+          <div class="big_txt">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="big_txt">
+            <a href="" class="eng_font_big">
+              <span>custom</span>
+            </a>
+          </div>
+          <div class="big_txt">
+            <a href="" class="eng_font_big">
+              <span>care & tool</span>
+            </a>
+          </div>
+        </div>
+        <!-- 첫번째 줄 메뉴 end -->
+
+        <!-- 두번째 줄 메뉴 start -->
+        <div class="cate_wrap_second">
+          <div class="big_txt">
+            <a href="" class="eng_font_big">
+              <span>event</span>
+            </a>
+          </div>
+          <div class="big_txt">
+            <a href="" class="eng_font_big">
+              <span>review</span>
+            </a>
+          </div>
+          <div class="big_txt">
+            <a href="" class="eng_font_big">
+              <span>brand</span>
+            </a>
+            <a href="">
+              <span>about</span>
+            </a>
+            <a href="">
+              <span>membership</span>
+            </a>
+            <a href="">
+              <span>magazine</span>
+            </a>
+            <a href="">
+              <span>collaboration</span>
+            </a>
+          </div>
+        </div>
+        <!-- 두번째 줄 메뉴 end -->
+
+        <!-- 세번째 줄 메뉴 start -->
+        <div class="cate_wrap_crew">
+
+          <!-- 오호라 크루 추천 start -->
+          <div>
+            <h3>오호라 크루 추천</h3>
+            <div style="transition-duration: 0ms; transform: translate3d(0px,0px,0px);">
+              <!-- div 몇개 생략함 -->
+              <a href="페이코 이벤트 링크">
+                <div class="imgBox">
+                  <img src="페이코" alt="단, 24시간 페이코 최대 22% 할인">
+                </div>
+                <div class="txtBox">단, 24시간 페이코 최대 22% 할인</div>
+              </a>
+            </div>
+            <div class="swiper-scrollbar">
+              <div class="swiper-scrollbar-drag" style="transition-duration: 0ms; width: 85px;"></div>
+            </div>
+            <span class="swiper-notification"></span>
+          </div>
+          <!-- 오호라 크루 추천 end -->
+
+          <div class="third_cate">
+            <a href="">
+              <span>CS Center</span>
+            </a>
+            <a href="">
+              <span>Notice</span>
+            </a>
+            <a href="">
+              <span>FAQ</span>
+            </a>
+            <a href="">
+              <!-- 원래는 How to만 span 빠져있음. 이상해서 span 넣음 -->
+              <span>"How to"</span>
+            </a>
+          </div>
+        </div>
+        <!-- 세번째 줄 메뉴 end -->
+
+        <ul class="shop_zone_displaynone">
+          <li style="margin-bottom: 80px;">
+            <span class="tit">
+              <a href="">
+                "event"
+                <span class="icon"></span>
+              </a>
+            </span>
+          </li>
+          <li style="margin-bottom: 80px;">
+            <span class="tit">
+              <a href="">
+                "review"
+                <span class="icon"></span>
+              </a>
+            </span>
+          </li>
+          <li style="margin-bottom: 60px;">
+            <span class="tit">
+              <a href="">
+                "how to"
+                <span class="icon"></span>
+              </a>
+            </span>
+          </li>
+        </ul>
+        <ul class="shop_zone_displaynone">
+          <li>
+            <span class="tit">
+              <a href="">
+                "membership"
+                <span class="icon"></span>
+              </a>
+            </span>
+            <ul>
+              <li>
+                <a href="" lang="ko" style="font-size: 18px; font-weight: bold;">신규멤버혜택</a>
+              </li>
+              <li>
+                <a href="" lang="ko" style="font-size: 18px; font-weight: bold;">멤버십</a>
+              </li>
+              <li>
+                <a href="" lang="ko" style="font-size: 18px; font-weight: bold;">FAQ</a>
+              </li>
+              <li>
+                <a href="" lang="ko" style="font-size: 18px; font-weight: bold;">CS Center</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="tit">
+              <a href="">
+                "brand"
+                <span class="icon"></span>
+              </a>
+            </span>
+            <ul>
+              <li>
+                <a href="">about</a>
+              </li>
+              <li>
+                <a href="">magazine</a>
+              </li>
+              <li>
+                <a href="">collaboration</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    <!-- 햄버거 메뉴(hover 메뉴~) end -->
+
+  </div>
+  <!-- 스냅 솔루션 스크립트라고 표기하는 용도 태그 span 2개 생략 -->
+  <div>
+    <input id="sf_draw_type" type="hidden" value="pc">
+    <input id="sf_store_name" type="hidden" value="ohora">
+  </div>
+
+  <!-- 헤더 호출 start -->
+  <!-- 플로팅 버튼 호출 start -->
+  <div id="floating">
+    <div class="go_top">
+      <span class="icon"></span>
+    </div>
+  </div>
+  <!-- 플로팅 버튼 호출 end -->
+
+  <div id="wrap" style="padding-top: 156px !important;">
+    <div id="container">
+      <div id="contents">
+        <div class="main_container_common_list_container">
+
+          <!-- 메인배너 영역 start -->
+          <div class="mainBanner_container_horizontal">
+            <div class="mainBanner_wrapper swiper-wrapper df-bannermanager df-bannermanager-bannermanage2"
+              df-banner-code="bannermanage2"
+              style="transition-duration: 0ms; transform: translate3d(-4219.72px, 0px, 0px);">
+              <div df-banner-clone=""
+                class="mainBanner_slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                data-swiper-slide-index="0">
+                <a href="https://www.ohora.kr/product/list.html?cate_no=121&amp;page_num=1">
+                  <img src="/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/92c3f30145cb275050b68649d34da1f7.jpg"
+                    alt="8차 컬렉션_30% off">
+                  <span class="8차 컬렉션_30% off shop_now">shop now &gt;</span>
+                </a>
+              </div>
+              <div df-banner-clone=""
+                class="mainBanner_slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                data-swiper-slide-index="1">
+                <a href="https://ohora2019.cafe24.com/product/list.html?cate_no=745">
+                  <img src="/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/44371f4758bf9516140425635e7db639.png"
+                    alt="10월_가을 컬러 팔레트" class="swiper-lazy swiper-lazy-loaded">
+                  <span class="10월_가을 컬러 팔레트 shop_now">shop now &gt;</span>
+                </a>
+              </div>
+              <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate"
+                data-swiper-slide-index="2">
+                <a href="https://ohora.kr/event/event6.html">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    alt="pc_main_gift bk" class="swiper-lazy"
+                    data-src="/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/4160fe76d5fd935dddb5ae90f7607d03.webp">
+                  <span class="pc_main_gift bk shop_now">shop now &gt;</span>
+                </a>
+              </div>
+              <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate swiper-slide-prev"
+                data-swiper-slide-index="3">
+                <a href="https://www.ohora.kr/board/product/list.html?board_no=4">
+                  <img src="/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/472e9fbd0e36e3d5757bc47e500fb700.webp"
+                    alt="main_big_banner_5 bk" class="swiper-lazy swiper-lazy-loaded">
+                  <span class="main_big_banner_5 bk shop_now">shop now &gt;</span>
+                </a>
+              </div>
+              <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-active"
+                data-swiper-slide-index="0">
+                <a href="https://www.ohora.kr/product/list.html?cate_no=121&amp;page_num=1">
+                  <img src="/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/92c3f30145cb275050b68649d34da1f7.jpg"
+                    alt="8차 컬렉션_30% off">
+                  <span class="8차 컬렉션_30% off shop_now">shop now &gt;</span>
+                </a>
+              </div>
+              <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-next"
+                data-swiper-slide-index="1">
+                <a href="https://ohora2019.cafe24.com/product/list.html?cate_no=745">
+                  <img src="/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/44371f4758bf9516140425635e7db639.png"
+                    alt="10월_가을 컬러 팔레트" class="swiper-lazy swiper-lazy-loaded">
+                  <span class="10월_가을 컬러 팔레트 shop_now">shop now &gt;</span>
+                </a>
+              </div>
+              <div df-banner-clone="" class="mainBanner_slide swiper-slide" data-swiper-slide-index="2">
+                <a href="https://ohora.kr/event/event6.html">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    alt="pc_main_gift bk" class="swiper-lazy"
+                    data-src="/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/4160fe76d5fd935dddb5ae90f7607d03.webp">
+                  <span class="pc_main_gift bk shop_now">shop now &gt;</span>
+                </a>
+              </div>
+              <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate-prev"
+                data-swiper-slide-index="3">
+                <a href="https://www.ohora.kr/board/product/list.html?board_no=4">
+                  <img src="/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/472e9fbd0e36e3d5757bc47e500fb700.webp"
+                    alt="main_big_banner_5 bk" class="swiper-lazy swiper-lazy-loaded">
+                  <span class="main_big_banner_5 bk shop_now">shop now &gt;</span>
+                </a>
+              </div>
+              <div df-banner-clone=""
+                class="mainBanner_slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                data-swiper-slide-index="0">
+                <a href="https://www.ohora.kr/product/list.html?cate_no=121&amp;page_num=1">
+                  <img src="/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/92c3f30145cb275050b68649d34da1f7.jpg"
+                    alt="8차 컬렉션_30% off">
+                  <span class="8차 컬렉션_30% off shop_now">shop now &gt;</span>
+                </a>
+              </div>
+              <div df-banner-clone=""
+                class="mainBanner_slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                data-swiper-slide-index="1">
+                <a href="https://ohora2019.cafe24.com/product/list.html?cate_no=745">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    alt="10월_가을 컬러 팔레트" class="swiper-lazy"
+                    data-src="/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/44371f4758bf9516140425635e7db639.png">
+                  <span class="10월_가을 컬러 팔레트 shop_now">shop now &gt;</span>
+                </a>
+              </div>
+              <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate"
+                data-swiper-slide-index="2">
+                <a href="https://ohora.kr/event/event6.html">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    alt="pc_main_gift bk" class="swiper-lazy"
+                    data-src="/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/4160fe76d5fd935dddb5ae90f7607d03.webp">
+                  <span class="pc_main_gift bk shop_now">shop now &gt;</span>
+                </a>
+              </div>
+              <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate"
+                data-swiper-slide-index="3">
+                <a href="https://www.ohora.kr/board/product/list.html?board_no=4">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    alt="main_big_banner_5 bk" class="swiper-lazy"
+                    data-src="/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/472e9fbd0e36e3d5757bc47e500fb700.webp">
+                  <span class="main_big_banner_5 bk shop_now">shop now &gt;</span>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+              <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+                aria-label="Go to slide 1"></span>
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
+            </div>
+            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"></div>
+            <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+          </div>
+          <!-- 메인배너 영역 end -->
+
+          <!-- 이달의 신상품 start -->
+          <div class="mainSection_SP_prdList_wrap_SP_newSeller_wrap_newCollections">
+            <!-- 타이틀 start -->
+            <h3>
+              <strong>이 달의 신상품</strong>
+              <a href="" class="tit_moreBtn_more_btn">
+                "+ 더보기"
+                <span class="more_displaynone"></span>
+              </a>
+            </h3>
+            <!-- 타이틀 end -->
+
+            <!-- 이 달의 신상품 탭(추가 영역) start -->
+            <div class="cate_tab">
+              <span class="on" date-cate="121">전체</span>
+              <span date-cate="123"></span>
+              <span date-cate="124"></span>
+            </div>
+            <!-- 이 달의 신상품 탭(추가 영역) end -->
+
+            <!-- 배너 이미지 start -->
+            <div df-banner-code="mainbottom-banner-new"
+              class="main_bottom_banner df-bannermanager df-bannermanager-mainbottom-banner-new"></div>
+            <!-- 배너 이미지 end -->
+
+            <!-- 복붙영역 st -->
+
+            <!-- 상품 진열 start -->
+            <div class="common_list_box">
+              <div class="swiper-container new_container swiper-container-initialized swiper-container-horizontal"
+                data-cate="121">
+                <ul class="items common_items swiper-wrapper">
+                  <li id="anchorBoxId_2101" class="swiper-slide load_complete swiper-slide-active" data-prd="2101"
+                    style="width: 250px; margin-right: 30px;">
+                    <div class="container complete" data-prd-no="2101">
+                      <dl>
+                        <a href="/product/detail.html?product_no=2101&amp;cate_no=121&amp;display_group=1"
+                          class="viewlink"></a>
+                        <div class="base_img">
+                          <div class="BR_icon">
+                            <p><b>BEST</b>리뷰</p>
+                          </div>
+                          <div class="product_icons"></div>
+                          <div class="thumb">
+                            <img loading="lazy" alt="" class="thumb_img" width="800" height="800"
+                              src="//www.ohora.kr/web/product/medium/202410/17d1808286f360f7cd1ddf77141b0fbd.jpg">
+                            <img loading="lazy" class="hover_img" width="800" height="800"
+                              src="//www.ohora.kr/web/product/big/202410/677fb310eddc9731eb72c7f8a9dd22d2.jpg">
+                          </div>
+                          <!-- 추가 이미지 가져오기 위한 영역 -->
+                          <div class="add_img"
+                            data-add1="//www.ohora.kr/web/product/extra/big/202410/0a5d72f15087fb86c15c8249438e2961.jpg"
+                            data-add2="//www.ohora.kr/web/product/extra/big/202410/20ea938442221e7f2d275a865172a656.jpg"
+                            data-add3="//www.ohora.kr/web/product/extra/big/202410/7ad8d1c56f1046c160fa9395f443c187.jpg"
+                            data-id="eListPrdImage2101_1"></div>
+                          <!-- 추가 이미지 가져오기 위한 영역 -->
+                          <span class="wishIcon">
+                            <img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png"
+                              class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="2101" categoryno="121"
+                              icon_status="off" login_status="F" individual-set="F">
+                          </span>
+                          <div class="sticker">
+                            <div class="new">NEW</div>
+                            <div class="percent">
+                              <div class="dcPercent"></div>
+                            </div>
+                            <div class="best">BEST</div>
+                          </div>
+                          <div class="restock"></div>
+                          <!------------------------------- @@ 품절일 시 on -------------------------------------------------------->
+                          <span class="soldout_img" style="display: none;">
+                            <a href="/product/detail.html?product_no=2101&amp;cate_no=121&amp;display_group=1">
+                              <span>coming<br>soon</span>
+                            </a>
+                          </span>
+                          <!------------------------------- @@ 품절일 시 on -------------------------------------------------------->
+                        </div>
+                        <div class="base_mask">
+                          <dd class="add_container">
+                            <div class="displaynone">
+                            </div>
+                          </dd>
+                          <dd class="info_container">
+                            <p class="name ">
+                              <span style="font-size:16px;color:#000000;font-weight:bold;">N 쿠잉 네일</span>
+                            </p>
+                            <p class="subname"></p>
+                            <p class="subnameSimple"></p>
+                          </dd>
+                          <dd class="soldout_container" style="display: none;">
+                            <p class="soldout">(품절)</p>
+                          </dd>
+                          <!--dd module="product_stocklayer"></dd-->
+                          <dd class="price_container">
+                            <p class="custom_price strike displaynone">0</p>
+                            <p class="price strike">14,800 <span class="displaynone"></span></p>
+                            <p class="sale_price">10,360</p>
+                            <div class="dcPercent"></div>
+                            <p class="discount">30%</p>
+                          </dd>
+                          <dd class="icons displaynone">
+                            <span class="soldout displaynone"></span>
+                            <span class="new displaynone"></span>
+                            <span class="recommend displaynone"></span>
+                            <span class="benefit displaynone"></span>
+                          </dd>
+                          <dd class="prdRegister_date">Thu, 19 Sep 2024 10:36:43 +0900</dd>
+                          <!-- 상품 정보 하단 영역 -->
+                          <div class="prdInfo_bottom">
+                            <!-- 크리마 리뷰 영역 -->
+                            <div class="crema_container">
+                              <div class="crema_wrap">
+                                <p class="rv_value">
+                                  <span class="crema-product-reviews-score crema-applied" data-product-code="2101"
+                                    data-star-style="single" data-format="{{{stars}}} {{{score}}}" data-hide-if-zero="1"
+                                    data-applied-widgets="[&quot;.crema-product-reviews-score&quot;]">
+                                    <div class="crema_product_reviews_score__container"
+                                      style="display: inline-block; font-family: inherit;">
+                                      <div
+                                        class="crema_product_reviews_score_star_wrapper crema_product_reviews_score_star_wrapper--full "
+                                        style="width: 13px; height: 13px; vertical-align: middle; display: inline-block;">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                          xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"
+                                          viewBox="0 0 20 20" class="crema_product_reviews_score_star_wrapper__star "
+                                          style="fill: rgb(0, 0, 0); width: 100%; height: 100%;">
+                                          <defs>
+                                            <path id="star-full"
+                                              d="M7.157 6.698l2.165-4.59a.743.743 0 0 1 1.358 0l2.165 4.59 4.84.74c.622.096.87.895.42 1.353l-3.503 3.57.827 5.044c.106.647-.544 1.141-1.1.835l-4.328-2.382-4.329 2.382c-.556.306-1.205-.188-1.099-.835l.826-5.044-3.502-3.57c-.45-.458-.202-1.257.42-1.352l4.84-.74z">
+                                            </path>
+                                          </defs>
+                                          <use xlink:href="#star-full"></use>
+                                        </svg>
+                                      </div> 5.0
+                                    </div>
+                                  </span>
+                                </p>
+                                <!-- .rv_value : 테스트용 -->
+                                <p class="rv_count"><span class="rv_icon"><img
+                                      src="/web/upload/rv_icon2.png"></span><span
+                                    class="count crema-product-reviews-count crema-applied" data-product-code="2101"
+                                    data-format="{{{count}}}" data-hide-if-zero="1"
+                                    data-applied-widgets="[&quot;.crema-product-reviews-count&quot;]">1</span></p>
+                              </div>
+                            </div>
+                            <!-- //크리마 리뷰 영역 -->
+                          </div>
+                          <!------------------------- @@해시태그 위치 이동 ----------------------------->
+                          <div class="hash_container done">
+                            <div class="hash_wrap"></div>
+                          </div>
+                          <!------------------------  @@해시태그 위치 이동 ------------------------------>
+                          <!-- //상품 정보 하단 영역 -->
+                          <dd class="review_count">
+                            리뷰: <span>1</span>
+                          </dd>
+                          <dd class="sold_count">
+                            구매: <span>322</span>
+                          </dd>
+                          <dd class="pm_link">More Details</dd>
+                          <div class="Prev_Cart" onclick="basketConfirmShow(this);" style="display: block;"><img
+                              src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                              onclick="category_add_basket('2101','121', '1', 'A0000', false, '1', 'P0000DCV', 'A', 'F', '0');"
+                              alt="장바구니 담기" class="ec-admin-icon cart"></div>
+                          <!-- 리뷰 아이콘 -->
+                          <div class="rv_icon">
+                            <a
+                              href="/product/detail.html?product_no=2101&amp;cate_no=121&amp;display_group=1&amp;smslay=category&amp;smsps=prd#SMS_detailTab_focus">
+                              <img src="/web/upload/rv_icon1.png">
+                              &nbsp;<span class="count crema-product-reviews-count crema-applied"
+                                data-product-code="2101" data-format="{{{count}}}" data-hide-if-zero="1"
+                                data-applied-widgets="[&quot;.crema-product-reviews-count&quot;]">1</span>
+                            </a>
+                          </div>
+                          <!-- @@ 상품 정보 호출용 -->
+                          <div class="only_info_chk displaynone">
+                            <div class="xans-element- xans-product xans-product-listitem">
+                              <div class="">
+                                <strong class="title displaynone"><span
+                                    style="font-size:12px;color:#555555;font-weight:bold;">가격</span> :</strong><strong
+                                  class="item_content"><span
+                                    style="font-size:12px;color:#555555;font-weight:bold;text-decoration:line-through;">14,800</span><span
+                                    id="span_product_tax_type_text" style="text-decoration:line-through;">
+                                  </span></strong>
+                              </div>
+                              <div class="">
+                                <strong class="title "><span style="font-size:13px;color:#222222;">할인판매가</span>
+                                  :</strong><strong class="item_content"><span
+                                    style="font-size:13px;color:#222222;">10,360</span></strong>
+                              </div>
+                              <div class="">
+                                <strong class="title displaynone"><span
+                                    style="font-size:12px;color:#555555;">사용후기</span> :</strong><strong
+                                  class="item_content"><span style="font-size:12px;color:#555555;">1</span></strong>
+                              </div>
+                              <div class="">
+                                <strong class="title displaynone"> :</strong><strong class="item_content"></strong>
+                              </div>
+                              <div class="">
+                                <strong class="title displaynone"><span
+                                    style="font-size:12px;color:#555555;">해시태그</span> :</strong><strong
+                                  class="item_content"><span style="font-size:12px;color:#555555;">#네일 #젤스트립 #핑크 #자석
+                                    #데일리 #글리터</span></strong>
+                              </div>
+                              <div class="">
+                                <strong class="title displaynone"><span
+                                    style="font-size:12px;color:#555555;">상품필터값</span> :</strong><strong
+                                  class="item_content"><span
+                                    style="font-size:12px;color:#555555;">네일,자석,데일리</span></strong>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- @@ 상품 정보 호출용 -->
+                          <!-- //리뷰 아이콘 -->
+                          <div class="restockIcon"></div>
+                          <div class="displaynone restockNoneChk"></div>
+                        </div>
+                      </dl>
+                    </div>
+                  </li>
+                  <li id="anchorBoxId_2106" class="swiper-slide load_complete swiper-slide-next" data-prd="2106"
+                    style="width: 250px; margin-right: 30px;">
+                    <div class="container complete" data-prd-no="2106">
+                      <dl>
+                        <a href="/product/detail.html?product_no=2106&amp;cate_no=121&amp;display_group=1"
+                          class="viewlink"></a>
+                        <div class="base_img">
+                          <div class="BR_icon">
+                            <p><b>BEST</b>리뷰</p>
+                          </div>
+                          <div class="product_icons"></div>
+                          <div class="thumb">
+                            <img loading="lazy" alt="" class="thumb_img" width="800" height="800"
+                              src="//www.ohora.kr/web/product/medium/202410/6bd59d9845fa4bf4e097e33bdf733027.jpg"><img
+                              loading="lazy" class="hover_img" width="800" height="800"
+                              src="//www.ohora.kr/web/product/big/202410/55b871332f5bbb75de9221fd6f0d5cd9.jpg">
+                          </div>
+                          <!-- 추가 이미지 가져오기 위한 영역 -->
+                          <div class="add_img"
+                            data-add1="//www.ohora.kr/web/product/extra/big/202410/ba455e736bddd9036a37b0d4e78328b3.jpg"
+                            data-add2="//www.ohora.kr/web/product/extra/big/202410/f4db74669072d13c4f9e688573ce4b6b.jpg"
+                            data-add3="//www.ohora.kr/web/product/extra/big/202410/2623f275c87fdfc2c1034c9a6ca63816.jpg"
+                            data-id="eListPrdImage2106_1"></div>
+                          <!-- 추가 이미지 가져오기 위한 영역 -->
+                          <span class="wishIcon"><img
+                              src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png"
+                              class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="2106" categoryno="121"
+                              icon_status="off" login_status="F" individual-set="F"></span>
+                          <div class="sticker">
+                            <div class="new">NEW</div>
+                            <div class="percent">
+                              <div class="dcPercent"></div>
+                            </div>
+                            <div class="best">BEST</div>
+                          </div>
+                          <div class="restock"></div>
+                          <!------------------------------- @@ 품절일 시 on -------------------------------------------------------->
+                          <span class="soldout_img" style="display: none;"><a
+                              href="/product/detail.html?product_no=2106&amp;cate_no=121&amp;display_group=1"><span>coming<br>soon</span></a></span>
+                          <!------------------------------- @@ 품절일 시 on -------------------------------------------------------->
+                        </div>
+                        <div class="base_mask">
+                          <dd class="add_container">
+                            <div class="displaynone">
+
+                            </div>
+                          </dd>
+                          <dd class="info_container">
+                            <p class="name "><span style="font-size:16px;color:#000000;font-weight:bold;">N 워터리 문
+                                네일</span></p>
+
+                            <p class="subname"></p>
+                            <p class="subnameSimple"></p>
+                          </dd>
+                          <dd class="soldout_container" style="display: none;">
+                            <p class="soldout">(품절)</p>
+                          </dd>
+                          <!--dd module="product_stocklayer"></dd-->
+
+                          <dd class="price_container">
+                            <p class="custom_price strike displaynone">0</p>
+                            <p class="price strike">14,800 <span class="displaynone"></span></p>
+                            <p class="sale_price">10,360</p>
+                            <div class="dcPercent"></div>
+                            <p class="discount">30%</p>
+                          </dd>
+                          <dd class="icons displaynone">
+                            <span class="soldout displaynone"></span> <span class="new displaynone"></span> <span
+                              class="recommend displaynone"></span>
+                            <span class="benefit displaynone"></span>
+                          </dd>
+                          <dd class="prdRegister_date">Thu, 19 Sep 2024 11:01:53 +0900</dd>
+                          <!-- 상품 정보 하단 영역 -->
+                          <div class="prdInfo_bottom">
+                            <!-- 크리마 리뷰 영역 -->
+                            <div class="crema_container">
+                              <div class="crema_wrap">
+                                <p class="rv_value"><span class="crema-product-reviews-score crema-applied"
+                                    data-product-code="2106" data-star-style="single"
+                                    data-format="{{{stars}}} {{{score}}}" data-hide-if-zero="1"
+                                    data-applied-widgets="[&quot;.crema-product-reviews-score&quot;]">
+                                    <div class="crema_product_reviews_score__container"
+                                      style="display: inline-block; font-family: inherit;">
+                                      <div
+                                        class="crema_product_reviews_score_star_wrapper crema_product_reviews_score_star_wrapper--full "
+                                        style="width: 13px; height: 13px; vertical-align: middle; display: inline-block;">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                          xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"
+                                          viewBox="0 0 20 20" class="crema_product_reviews_score_star_wrapper__star "
+                                          style="fill: rgb(0, 0, 0); width: 100%; height: 100%;">
+                                          <defs>
+                                            <path id="star-full"
+                                              d="M7.157 6.698l2.165-4.59a.743.743 0 0 1 1.358 0l2.165 4.59 4.84.74c.622.096.87.895.42 1.353l-3.503 3.57.827 5.044c.106.647-.544 1.141-1.1.835l-4.328-2.382-4.329 2.382c-.556.306-1.205-.188-1.099-.835l.826-5.044-3.502-3.57c-.45-.458-.202-1.257.42-1.352l4.84-.74z">
+                                            </path>
+                                          </defs>
+                                          <use xlink:href="#star-full"></use>
+                                        </svg>
+                                      </div> 5.0
+                                    </div>
+                                  </span></p> <!-- .rv_value : 테스트용 -->
+                                <p class="rv_count"><span class="rv_icon"><img
+                                      src="/web/upload/rv_icon2.png"></span><span
+                                    class="count crema-product-reviews-count crema-applied" data-product-code="2106"
+                                    data-format="{{{count}}}" data-hide-if-zero="1"
+                                    data-applied-widgets="[&quot;.crema-product-reviews-count&quot;]">1</span></p>
+                              </div>
+                            </div>
+                            <!-- //크리마 리뷰 영역 -->
+                          </div>
+                          <!------------------------- @@해시태그 위치 이동 ----------------------------->
+                          <div class="hash_container done">
+                            <div class="hash_wrap"></div>
+                          </div>
+                          <!------------------------  @@해시태그 위치 이동 ------------------------------>
+                          <!-- //상품 정보 하단 영역 -->
+                          <dd class="review_count">
+                            리뷰: <span>0</span>
+                          </dd>
+                          <dd class="sold_count">
+                            구매: <span>245</span>
+                          </dd>
+                          <dd class="pm_link">More Details</dd>
+                          <div class="Prev_Cart" onclick="basketConfirmShow(this);" style="display: block;"><img
+                              src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                              onclick="category_add_basket('2106','121', '1', 'A0000', false, '1', 'P0000DDA', 'A', 'F', '0');"
+                              alt="장바구니 담기" class="ec-admin-icon cart"></div>
+                          <!-- 리뷰 아이콘 -->
+                          <div class="rv_icon">
+                            <a
+                              href="/product/detail.html?product_no=2106&amp;cate_no=121&amp;display_group=1&amp;smslay=category&amp;smsps=prd#SMS_detailTab_focus">
+                              <img src="/web/upload/rv_icon1.png">
+                              &nbsp;<span class="count crema-product-reviews-count crema-applied"
+                                data-product-code="2106" data-format="{{{count}}}" data-hide-if-zero="1"
+                                data-applied-widgets="[&quot;.crema-product-reviews-count&quot;]">1</span>
+                            </a>
+                          </div>
+                          <!-- @@ 상품 정보 호출용 -->
+                          <div class="only_info_chk displaynone">
+                            <div class="xans-element- xans-product xans-product-listitem">
+                              <div class="">
+                                <strong class="title displaynone"><span
+                                    style="font-size:12px;color:#555555;font-weight:bold;">가격</span> :</strong><strong
+                                  class="item_content"><span
+                                    style="font-size:12px;color:#555555;font-weight:bold;text-decoration:line-through;">14,800</span><span
+                                    id="span_product_tax_type_text" style="text-decoration:line-through;">
+                                  </span></strong>
+                              </div>
+                              <div class="">
+                                <strong class="title "><span style="font-size:13px;color:#222222;">할인판매가</span>
+                                  :</strong><strong class="item_content"><span
+                                    style="font-size:13px;color:#222222;">10,360</span></strong>
+                              </div>
+                              <div class="">
+                                <strong class="title displaynone"><span
+                                    style="font-size:12px;color:#555555;">사용후기</span> :</strong><strong
+                                  class="item_content"><span style="font-size:12px;color:#555555;">0</span></strong>
+                              </div>
+                              <div class="">
+                                <strong class="title displaynone"> :</strong><strong class="item_content"></strong>
+                              </div>
+                              <div class="">
+                                <strong class="title displaynone"><span
+                                    style="font-size:12px;color:#555555;">해시태그</span> :</strong><strong
+                                  class="item_content"><span style="font-size:12px;color:#555555;">#네일 #젤스트립 #실버 #자석
+                                    #그레이</span></strong>
+                              </div>
+                              <div class="">
+                                <strong class="title displaynone"><span
+                                    style="font-size:12px;color:#555555;">상품필터값</span> :</strong><strong
+                                  class="item_content"><span style="font-size:12px;color:#555555;">네일,자석</span></strong>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- @@ 상품 정보 호출용 -->
+                          <!-- //리뷰 아이콘 -->
+                          <div class="restockIcon"></div>
+                          <div class="displaynone restockNoneChk"></div>
+                        </div>
+                      </dl>
+                    </div>
+                  </li>
+                  <li id="anchorBoxId_2103" class="swiper-slide load_complete" data-prd="2103"
+                    style="width: 250px; margin-right: 30px;">
+                    <div class="container complete" data-prd-no="2103">
+                      <dl>
+                        <a href="/product/detail.html?product_no=2103&amp;cate_no=121&amp;display_group=1"
+                          class="viewlink"></a>
+                        <div class="base_img">
+                          <div class="BR_icon">
+                            <p><b>BEST</b>리뷰</p>
+                          </div>
+                          <div class="product_icons"></div>
+                          <div class="thumb">
+                            <img loading="lazy" alt="" class="thumb_img" width="800" height="800"
+                              src="//www.ohora.kr/web/product/medium/202410/8b4bb562a09100244fa6cd0ef361f550.jpg"><img
+                              loading="lazy" class="hover_img" width="800" height="800"
+                              src="//www.ohora.kr/web/product/big/202410/d0feef871c1272d03457fc47caadded6.jpg">
+                          </div>
+                          <!-- 추가 이미지 가져오기 위한 영역 -->
+                          <div class="add_img"
+                            data-add1="//www.ohora.kr/web/product/extra/big/202410/b320fd44e21637724c79c4a9e072c537.jpg"
+                            data-add2="//www.ohora.kr/web/product/extra/big/202410/188c384641e4b96db1fd1d25343bc733.jpg"
+                            data-add3="//www.ohora.kr/web/product/extra/big/202410/05e2110c511d2ecfbd83640c90813b76.jpg"
+                            data-id="eListPrdImage2103_1"></div>
+                          <!-- 추가 이미지 가져오기 위한 영역 -->
+                          <span class="wishIcon"><img
+                              src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png"
+                              class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="2103" categoryno="121"
+                              icon_status="off" login_status="F" individual-set="F"></span>
+                          <div class="sticker">
+                            <div class="new">NEW</div>
+                            <div class="percent">
+                              <div class="dcPercent"></div>
+                            </div>
+                            <div class="best">BEST</div>
+                          </div>
+                          <div class="restock"></div>
+                          <!------------------------------- @@ 품절일 시 on -------------------------------------------------------->
+                          <span class="soldout_img" style="display: none;"><a
+                              href="/product/detail.html?product_no=2103&amp;cate_no=121&amp;display_group=1"><span>coming<br>soon</span></a></span>
+                          <!------------------------------- @@ 품절일 시 on -------------------------------------------------------->
+                        </div>
+                        <div class="base_mask">
+                          <dd class="add_container">
+                            <div class="displaynone">
+
+                            </div>
+                          </dd>
+                          <dd class="info_container">
+                            <p class="name "><span style="font-size:16px;color:#000000;font-weight:bold;">N 애쉬 올리브
+                                네일</span></p>
+
+                            <p class="subname"></p>
+                            <p class="subnameSimple"></p>
+                          </dd>
+                          <dd class="soldout_container" style="display: none;">
+                            <p class="soldout">(품절)</p>
+                          </dd>
+                          <!--dd module="product_stocklayer"></dd-->
+
+                          <dd class="price_container">
+                            <p class="custom_price strike displaynone">0</p>
+                            <p class="price strike">14,800 <span class="displaynone"></span></p>
+                            <p class="sale_price">10,360</p>
+                            <div class="dcPercent"></div>
+                            <p class="discount">30%</p>
+                          </dd>
+                          <dd class="icons displaynone">
+                            <span class="soldout displaynone"></span> <span class="new displaynone"></span> <span
+                              class="recommend displaynone"></span>
+                            <span class="benefit displaynone"></span>
+                          </dd>
+                          <dd class="prdRegister_date">Thu, 19 Sep 2024 10:44:39 +0900</dd>
+                          <!-- 상품 정보 하단 영역 -->
+                          <div class="prdInfo_bottom">
+                            <!-- 크리마 리뷰 영역 -->
+                            <div class="crema_container">
+                              <div class="crema_wrap">
+                                <p class="rv_value"><span class="crema-product-reviews-score crema-applied"
+                                    data-product-code="2103" data-star-style="single"
+                                    data-format="{{{stars}}} {{{score}}}" data-hide-if-zero="1"
+                                    data-applied-widgets="[&quot;.crema-product-reviews-score&quot;]">
+                                    <div class="crema_product_reviews_score__container"
+                                      style="display: inline-block; font-family: inherit;">
+                                      <div
+                                        class="crema_product_reviews_score_star_wrapper crema_product_reviews_score_star_wrapper--full "
+                                        style="width: 13px; height: 13px; vertical-align: middle; display: inline-block;">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                          xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"
+                                          viewBox="0 0 20 20" class="crema_product_reviews_score_star_wrapper__star "
+                                          style="fill: rgb(0, 0, 0); width: 100%; height: 100%;">
+                                          <defs>
+                                            <path id="star-full"
+                                              d="M7.157 6.698l2.165-4.59a.743.743 0 0 1 1.358 0l2.165 4.59 4.84.74c.622.096.87.895.42 1.353l-3.503 3.57.827 5.044c.106.647-.544 1.141-1.1.835l-4.328-2.382-4.329 2.382c-.556.306-1.205-.188-1.099-.835l.826-5.044-3.502-3.57c-.45-.458-.202-1.257.42-1.352l4.84-.74z">
+                                            </path>
+                                          </defs>
+                                          <use xlink:href="#star-full"></use>
+                                        </svg>
+                                      </div> 5.0
+                                    </div>
+                                  </span></p> <!-- .rv_value : 테스트용 -->
+                                <p class="rv_count"><span class="rv_icon"><img
+                                      src="/web/upload/rv_icon2.png"></span><span
+                                    class="count crema-product-reviews-count crema-applied" data-product-code="2103"
+                                    data-format="{{{count}}}" data-hide-if-zero="1"
+                                    data-applied-widgets="[&quot;.crema-product-reviews-count&quot;]">2</span></p>
+                              </div>
+                            </div>
+                            <!-- //크리마 리뷰 영역 -->
+                          </div>
+                          <!------------------------- @@해시태그 위치 이동 ----------------------------->
+                          <div class="hash_container done">
+                            <div class="hash_wrap"></div>
+                          </div>
+                          <!------------------------  @@해시태그 위치 이동 ------------------------------>
+                          <!-- //상품 정보 하단 영역 -->
+                          <dd class="review_count">
+                            리뷰: <span>0</span>
+                          </dd>
+                          <dd class="sold_count">
+                            구매: <span>162</span>
+                          </dd>
+                          <dd class="pm_link">More Details</dd>
+                          <div class="Prev_Cart" onclick="basketConfirmShow(this);" style="display: block;"><img
+                              src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                              onclick="category_add_basket('2103','121', '1', 'A0000', false, '1', 'P0000DCX', 'A', 'F', '0');"
+                              alt="장바구니 담기" class="ec-admin-icon cart"></div>
+                          <!-- 리뷰 아이콘 -->
+                          <div class="rv_icon">
+                            <a
+                              href="/product/detail.html?product_no=2103&amp;cate_no=121&amp;display_group=1&amp;smslay=category&amp;smsps=prd#SMS_detailTab_focus">
+                              <img src="/web/upload/rv_icon1.png">
+                              &nbsp;<span class="count crema-product-reviews-count crema-applied"
+                                data-product-code="2103" data-format="{{{count}}}" data-hide-if-zero="1"
+                                data-applied-widgets="[&quot;.crema-product-reviews-count&quot;]">2</span>
+                            </a>
+                          </div>
+                          <!-- @@ 상품 정보 호출용 -->
+                          <div class="only_info_chk displaynone">
+                            <div class="xans-element- xans-product xans-product-listitem">
+                              <div class="">
+                                <strong class="title displaynone"><span
+                                    style="font-size:12px;color:#555555;font-weight:bold;">가격</span> :</strong><strong
+                                  class="item_content"><span
+                                    style="font-size:12px;color:#555555;font-weight:bold;text-decoration:line-through;">14,800</span><span
+                                    id="span_product_tax_type_text" style="text-decoration:line-through;">
+                                  </span></strong>
+                              </div>
+                              <div class="">
+                                <strong class="title "><span style="font-size:13px;color:#222222;">할인판매가</span>
+                                  :</strong><strong class="item_content"><span
+                                    style="font-size:13px;color:#222222;">10,360</span></strong>
+                              </div>
+                              <div class="">
+                                <strong class="title displaynone"><span
+                                    style="font-size:12px;color:#555555;">사용후기</span> :</strong><strong
+                                  class="item_content"><span style="font-size:12px;color:#555555;">0</span></strong>
+                              </div>
+                              <div class="">
+                                <strong class="title displaynone"> :</strong><strong class="item_content"></strong>
+                              </div>
+                              <div class="">
+                                <strong class="title displaynone"><span
+                                    style="font-size:12px;color:#555555;">해시태그</span> :</strong><strong
+                                  class="item_content"><span style="font-size:12px;color:#555555;">#네일 #젤스트립 #그라데이션 #마블
+                                    #카키 #그린 #데일리</span></strong>
+                              </div>
+                              <div class="">
+                                <strong class="title displaynone"><span
+                                    style="font-size:12px;color:#555555;">상품필터값</span> :</strong><strong
+                                  class="item_content"><span
+                                    style="font-size:12px;color:#555555;">데일리,그라데이션,네일</span></strong>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- @@ 상품 정보 호출용 -->
+                          <!-- //리뷰 아이콘 -->
+                          <div class="restockIcon"></div>
+                          <div class="displaynone restockNoneChk"></div>
+                        </div>
+                      </dl>
+                    </div>
+                  </li>
+                  <li id="anchorBoxId_2105" class="swiper-slide load_complete" data-prd="2105"
+                    style="width: 250px; margin-right: 30px;">
+                    <div class="container complete" data-prd-no="2105">
+                      <dl>
+                        <a href="/product/detail.html?product_no=2105&amp;cate_no=121&amp;display_group=1"
+                          class="viewlink"></a>
+                        <div class="base_img">
+                          <div class="BR_icon">
+                            <p><b>BEST</b>리뷰</p>
+                          </div>
+                          <div class="product_icons"></div>
+                          <div class="thumb">
+                            <img loading="lazy" alt="" class="thumb_img" width="800" height="800"
+                              src="//www.ohora.kr/web/product/medium/202410/ff6dd7a9e27db6df380f28a4d0535049.jpg"><img
+                              loading="lazy" class="hover_img" width="800" height="800"
+                              src="//www.ohora.kr/web/product/big/202410/a5beaf9f11af868748bc0cc450709cbd.jpg">
+                          </div>
+                          <!-- 추가 이미지 가져오기 위한 영역 -->
+                          <div class="add_img"
+                            data-add1="//www.ohora.kr/web/product/extra/big/202410/6641eefbca1f80cc409cde53649cbb24.jpg"
+                            data-add2="//www.ohora.kr/web/product/extra/big/202410/3653e565360cb7dee09e7bd5405a49ee.jpg"
+                            data-add3="//www.ohora.kr/web/product/extra/big/202410/92ba1e634803f48797c012cc04461d09.jpg"
+                            data-id="eListPrdImage2105_1"></div>
+                          <!-- 추가 이미지 가져오기 위한 영역 -->
+                          <span class="wishIcon"><img
+                              src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png"
+                              class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="2105" categoryno="121"
+                              icon_status="off" login_status="F" individual-set="F"></span>
+                          <div class="sticker">
+                            <div class="new">NEW</div>
+                            <div class="percent">
+                              <div class="dcPercent"></div>
+                            </div>
+                            <div class="best">BEST</div>
+                          </div>
+                          <div class="restock"></div>
+                          <!------------------------------- @@ 품절일 시 on -------------------------------------------------------->
+                          <span class="soldout_img" style="display: none;"><a
+                              href="/product/detail.html?product_no=2105&amp;cate_no=121&amp;display_group=1"><span>coming<br>soon</span></a></span>
+                          <!------------------------------- @@ 품절일 시 on -------------------------------------------------------->
+                        </div>
+                        <div class="base_mask">
+                          <dd class="add_container">
+                            <div class="displaynone">
+
+                            </div>
+                          </dd>
+                          <dd class="info_container">
+                            <p class="name "><span style="font-size:16px;color:#000000;font-weight:bold;">N 슈가 글라스
+                                네일</span></p>
+
+                            <p class="subname"></p>
+                            <p class="subnameSimple"></p>
+                          </dd>
+                          <dd class="soldout_container" style="display: none;">
+                            <p class="soldout">(품절)</p>
+                          </dd>
+                          <!--dd module="product_stocklayer"></dd-->
+
+                          <dd class="price_container">
+                            <p class="custom_price strike displaynone">0</p>
+                            <p class="price strike">14,800 <span class="displaynone"></span></p>
+                            <p class="sale_price">10,360</p>
+                            <div class="dcPercent"></div>
+                            <p class="discount">30%</p>
+                          </dd>
+                          <dd class="icons displaynone">
+                            <span class="soldout displaynone"></span> <span class="new displaynone"></span> <span
+                              class="recommend displaynone"></span>
+                            <span class="benefit displaynone"></span>
+                          </dd>
+                          <dd class="prdRegister_date">Thu, 19 Sep 2024 10:59:31 +0900</dd>
+                          <!-- 상품 정보 하단 영역 -->
+                          <div class="prdInfo_bottom">
+                            <!-- 크리마 리뷰 영역 -->
+                            <div class="crema_container">
+                              <div class="crema_wrap">
+                                <p class="rv_value"><span class="crema-product-reviews-score crema-applied"
+                                    data-product-code="2105" data-star-style="single"
+                                    data-format="{{{stars}}} {{{score}}}" data-hide-if-zero="1"
+                                    data-applied-widgets="[&quot;.crema-product-reviews-score&quot;]">
+                                    <div class="crema_product_reviews_score__container"
+                                      style="display: inline-block; font-family: inherit;">
+                                      <div
+                                        class="crema_product_reviews_score_star_wrapper crema_product_reviews_score_star_wrapper--full "
+                                        style="width: 13px; height: 13px; vertical-align: middle; display: inline-block;">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                          xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"
+                                          viewBox="0 0 20 20" class="crema_product_reviews_score_star_wrapper__star "
+                                          style="fill: rgb(0, 0, 0); width: 100%; height: 100%;">
+                                          <defs>
+  
